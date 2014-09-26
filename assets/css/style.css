@@ -1,59 +1,153 @@
-.container {
-	background-color: #ccc;
-	margin: 0 auto;
-	width: 960px;
+@import url("reset.css");
+@import url("http://fonts.googleapis.com/css?family=PT+Serif|Ubuntu:300,700");
+
+/* Elements */
+
+body {
+	background: #222 url("../images/bg-darkwood.png");
+	font: 1em/1.5 Ubuntu, Helvetica, Arial, sans-serif;
 }
 
-.main {
-	background-color: #f00;
-	float: left;
-	padding: 15px;
-	width: 600px;
-}
-
-.sidebar {
-	background-color: #00f;
+aside {
 	float: right;
-	padding: 15px;
-	width: 300px;
+	padding: 20px 20px 40px 40px;
+	width: 270px;
 }
 
-#header {
-	background-color: #ff0;
-	padding: 15px;
-	width: 930px;
+b {
+	font-weight: 700;
 }
 
-#header ul li {
-	display: inline;
-	margin: 0 20px;
-}
-
-.article figure {
+figure {
+	margin: 30px 0;
 	text-align: center;
 }
 
-.article figure img {
-	border: 1px solid #000;
+figure img {
+	border: 5px solid #ecf0f1;
+	border-radius: 30px;
 	width: 500px;
 }
 
-.footer {
-	background-color: #000;
-	color: #fff;
+footer {
+	background-color: #fff;
 	clear: both;
-	width: 960px;
-		height: 100px;
+	padding: 40px;
+	width: 880px;
+		height: 40px;
+}
+
+header {
+	margin: 0;
+	padding: 0;
+}
+
+header#brand {
+	background-color: #fff;
+	padding: 0 30px 50px;
+	width: 900px;
+		height: 80px;
+
+}
+
+h1, h2, h3, h4 {
+	font-family: "PT Serif", Georgia, serif;
+	margin-bottom: 5px;
 }
 
 h1 {
-	font: 4em "Zalderdash", sans-serif;
-}
-
-.main h1 {
 	font-size: 2em;
 }
 
-ul, ol {
-	list-style: inside;
+h2 {
+	margin-bottom: 20px;
 }
+
+header#brand h1 {
+	float: left;
+	font-size: 3em;
+	line-height: 1.5;
+	margin: 0;
+}
+
+header#brand h2 {
+	float: right;
+	font-size: 1.5em;
+	font-style: italic;
+	margin: 20px 0 0;
+}
+
+nav {
+	clear: both;
+}
+
+nav ul li {
+	display: inline;
+}
+
+nav ul li a {
+	display: inline-block;
+	width: 220px;
+}
+
+section {
+	margin-bottom: 30px;
+}
+
+section h1, section h2, section h3, section h4 {
+	font-family: Ubuntu, Helvetica, Arial, sans-serif;
+}
+
+section h1 {
+	font-size: 1.5em;
+}
+
+section h2 {
+	font-size: 1.25em;
+}
+
+section h3 {
+	font-size: 1.15em;
+}
+
+section h4 {
+	font-size: 1em;
+}
+
+section ul, section ol {
+	list-style: square inside;
+	margin: 20px 0 20px 20px;
+}
+
+p {
+	margin-bottom: 10px;
+}
+
+a {
+	color: #e74c3c;
+	text-decoration: none;
+}
+
+/* ID's */
+
+#container {
+	background:
+		linear-gradient(
+			rgba(231, 76, 60, 1.0), 
+			rgba(255, 255, 255, 0.25)
+    	), url("../images/bg-litechevron.png");
+	margin: 20px auto;
+	width: 960px;
+}
+
+#main {
+	background-color: #fff;
+	border-radius: 0 20px 20px 0;
+	border: 1px solid #ecf0f1;
+	border-width: 1px 1px 1px 0;
+	padding: 20px 40px;
+	width: 545px;
+}
+
+/* Classes */
+
